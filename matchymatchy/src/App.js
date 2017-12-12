@@ -6,6 +6,7 @@ import { Button, Container, Row, Col, Alert } from 'reactstrap';
 import Main from './Main';
 import Shopper from './Shopper';
 import MatchMaker from './MatchMaker';
+import Seller from './Seller';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
           <h2>Crowd Sourced Personal Shopping</h2>
       </header>
       <Alert color="danger"></Alert>
-      <MatchMaker />
+      <Seller />
       <br/>
       <br/>
       <br/>
