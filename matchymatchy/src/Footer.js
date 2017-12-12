@@ -6,7 +6,7 @@ const Footer = () => {
   return(
     <div>
     <div id="footy">
-    Copyright: 2017 Matchy-Matchy; Photos by Priscilla Du Preez,  NordWood Themes, and Lauren Roberts on Unsplash
+    Copyright: 2017 Matchy-Matchy; Photos and Artist Names and Contact Information available at Unsplash.com
     </div>
     </div>
 
