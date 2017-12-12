@@ -7,6 +7,7 @@ import Main from './Main';
 import Shopper from './Shopper';
 import MatchMaker from './MatchMaker';
 import Seller from './Seller';
+import Mall from './Mall';
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
           <h2>Crowd Sourced Personal Shopping</h2>
       </header>
       <Alert color="danger"></Alert>
-      <Seller />
+      <Mall />
       <br/>
       <br/>
       <br/>

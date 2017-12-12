@@ -41,6 +41,10 @@ class Seller extends Component {
           <Label for="exampleText">Price: $</Label>
           <Input type="textarea" name="text" id="Price" placeholder="Enter the price in dollars."/>
         </FormGroup>
+        <FormGroup>
+          <Label for="Commission">Commission: $</Label>
+          <Input type="textarea" name="text" id="Price" placeholder="Enter the commission you will pay per item sold."/>
+        </FormGroup>
         <FormGroup check>
           <Label check>
             <Input type="checkbox" />{' '}
