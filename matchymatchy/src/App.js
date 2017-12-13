@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
@@ -8,23 +13,23 @@ import Shopper from './Shopper';
 import MatchMaker from './MatchMaker';
 import Seller from './Seller';
 import Mall from './Mall';
+import EditProduct from './EditProduct';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Matchy-Matchy</h1>
-          <h2>Crowd Sourced Personal Shopping</h2>
-      </header>
-      <Alert color="danger"></Alert>
-      <Mall />
-      <br/>
-      <br/>
-      <br/>
-      <Alert color="danger" id="bottom"></Alert>
-      <Footer />
-      </div>
+
+      <Router>
+        <div>
+          <Route exact path="/" component={Main}/>
+          <Route exact path="/shopper" component={Shopper}/>
+          <Route exact path="/seller" component={Seller}/>
+          <Route exact path="/mall" component={Mall}/>
+          <Route exact path="/matchmaker" component={MatchMaker}/>
+          <Route exact path="/editproduct" component={EditProduct}/>
+        </div>
+      </Router>
+
     );
   }
 }

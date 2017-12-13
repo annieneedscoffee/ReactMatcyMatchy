@@ -9,7 +9,7 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
 
-class Seller extends Component {
+class EditProduct extends Component {
   render() {
     return (
       <div className="App">
@@ -19,7 +19,7 @@ class Seller extends Component {
       </header>
       <Alert color="danger"></Alert>
       <div>
-      <h1>Post a New Product</h1>
+      <h1>Edit This Product</h1>
       <Form>
         <FormGroup>
           <Label for="Product"></Label>
@@ -86,43 +86,6 @@ class Seller extends Component {
         <Button>Submit</Button>
         <br/>
       </Form>
-      <br/>
-      <h1>Products Currently Posted</h1>
-      <br/>
-      <Table striped>
-  <thead>
-    <tr>
-      <th>Product ID</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Edit</th>
-      <th>Delete</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Polka Dot Rain Coat</td>
-      <td>$24.99</td>
-      <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
-        <td><Button>Delete</Button></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Fuzzy Alligator Slippers</td>
-      <td>$9.99</td>
-        <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
-          <td><Button>Delete</Button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Striped Tie Design 3</td>
-      <td>$19.99</td>
-        <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
-          <td><Button>Delete</Button></td>
-    </tr>
-  </tbody>
-</Table>
       </div>
       <br/>
       <br/>
@@ -134,4 +97,4 @@ class Seller extends Component {
   }
 }
 
-export default Seller;
+export default EditProduct;

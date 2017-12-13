@@ -1,12 +1,27 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
- CardSubtitle, CardBody, Row, Col } from 'reactstrap';
+ CardSubtitle, CardBody, Row, Col, Alert } from 'reactstrap';
+ import logo from './logo.svg';
+ import './App.css';
+ import Footer from './Footer';
+
 
  class MatchMaker extends Component{
    render(){
      return(
+       <div className="App">
+         <header className="App-header">
+           <h1 className="App-title">Matchy-Matchy</h1>
+           <h2>Crowd Sourced Personal Shopping</h2>
+       </header>
+       <Alert color="danger"></Alert>
        <div>
-       <Button>Go to the Mall</Button>
+       <Button tag={Link} to="/mall">Go to the Mall</Button>
        <br/>
        <br/>
          <Row>
@@ -96,6 +111,13 @@ import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
 
 
 </div>
+<br/>
+<br/>
+<br/>
+<Alert color="danger" id="bottom"></Alert>
+<Footer />
+</div>
+
      )
    }
  }

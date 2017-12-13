@@ -4,11 +4,24 @@ import App from './App';
 import './App.css';
 import Footer from './Footer';
 import { Button, Card, CardImg, CardTitle, CardText, CardDeck,
- CardSubtitle, CardBody  } from 'reactstrap';
+ CardSubtitle, CardBody, Alert  } from 'reactstrap';
+ import logo from './logo.svg';
+ import './App.css';
+ import {
+   BrowserRouter as Router,
+   Route,
+   Link
+ } from 'react-router-dom';
 
 class Main extends Component{
   render(){
     return(
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Matchy-Matchy</h1>
+          <h2>Crowd Sourced Personal Shopping</h2>
+      </header>
+      <Alert color="danger"></Alert>
       <div>
       <CardDeck>
       <Card>
@@ -17,7 +30,7 @@ class Main extends Component{
           <CardTitle>Shop</CardTitle>
           <CardSubtitle>Find Matches!</CardSubtitle>
           <CardText>Free cutting edge fashion advice to find great matches for what you already own!</CardText>
-          <Button color="danger">Enter</Button>
+          <Button color="danger" tag={Link} to="/shopper">Enter</Button>
         </CardBody>
       </Card>
       <Card>
@@ -26,7 +39,7 @@ class Main extends Component{
           <CardTitle>MatchMake</CardTitle>
           <CardSubtitle>Earn Commissions</CardSubtitle>
           <CardText>Turn your fashion sense into cash and build your personal shopper reputation - matchmake!</CardText>
-          <Button color="danger">Enter</Button>
+          <Button color="danger" tag={Link} to="/matchmaker">Enter</Button>
         </CardBody>
       </Card>
       <Card>
@@ -35,10 +48,16 @@ class Main extends Component{
           <CardTitle>Sell</CardTitle>
           <CardSubtitle>Post Merchandise</CardSubtitle>
           <CardText>Make your products available to shoppers and matchmakers.</CardText>
-          <Button color="danger">Enter</Button>
+          <Button color="danger" tag={Link} to="/seller">Enter</Button>
         </CardBody>
       </Card>
     </CardDeck>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <Alert color="danger" id="bottom"></Alert>
+      <Footer />
       </div>
     )
   }
