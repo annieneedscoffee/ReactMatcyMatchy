@@ -9,8 +9,19 @@ import { Button, Form, FormGroup, Label, Input, FormText, Table, UncontrolledCar
  import logo from './logo.svg';
  import './App.css';
  import Footer from './Footer';
+ import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 class Mall extends Component {
+  createListItems(){
+    return this.props.products.map((product) =>{
+      return(
+        <div key={product.id}>
+          <p>{product.name}</p>
+        </div>
+      )
+    })
+  }
   render(){
     return(
       <div className="App">
@@ -33,6 +44,7 @@ class Mall extends Component {
      <CardImg top width="100%" src="https://images.unsplash.com/photo-1486821416551-68a65ef4d618?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
      <CardBody>
        <CardTitle>Ornate Heart Pendant</CardTitle>
+       <CardText>{this.createListItems()}</CardText>
        <CardSubtitle>Urban Outfitters</CardSubtitle>
        <br/>
           <CardSubtitle>Price: $35.00</CardSubtitle>
@@ -181,4 +193,9 @@ class Mall extends Component {
   }
 }
 
-export default Mall;
+function mapStateToProps(state){
+  return {products: state.products};
+}
+
+
+export default connect(mapStateToProps)(Mall);

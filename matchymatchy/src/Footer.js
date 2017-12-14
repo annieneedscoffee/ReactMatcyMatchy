@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Alert } from 'reactstrap';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 const Footer = () => {
   return(

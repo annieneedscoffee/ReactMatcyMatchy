@@ -9,6 +9,8 @@ import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
  import logo from './logo.svg';
  import './App.css';
  import Footer from './Footer';
+ import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
  class Shopper extends Component{
    render(){
@@ -24,7 +26,10 @@ import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
            <Col sm="6">
              <Card body>
                <CardTitle>Add New Request</CardTitle>
-               <CardText>Add Description Here: </CardText>
+               <CardText>Add What you need a Match for: </CardText>
+               <input type="text"></input>
+               <br/>
+             <CardText>Add Description Here: </CardText>
                <input type="text"></input>
                <br/>
                  <CardText>Add Photo URL here: </CardText>
@@ -36,10 +41,14 @@ import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
            <Col sm="6">
              <Card body>
                <CardTitle>Shopping Cart</CardTitle>
+               <br/>
+               <br/>
                <CardText>Contents: </CardText>
                <CardText>Subtotal: </CardText>
                <CardText>Tax: </CardText>
                 <CardText>Total: </CardText>
+                <br/>
+                <br/>
                 <br/>
                <Button>Check Out</Button>
              </Card>

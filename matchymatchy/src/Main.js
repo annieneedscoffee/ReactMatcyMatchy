@@ -12,6 +12,8 @@ import { Button, Card, CardImg, CardTitle, CardText, CardDeck,
    Route,
    Link
  } from 'react-router-dom';
+ import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 class Main extends Component{
   render(){

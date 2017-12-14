@@ -14,8 +14,14 @@ import MatchMaker from './MatchMaker';
 import Seller from './Seller';
 import Mall from './Mall';
 import EditProduct from './EditProduct';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {getRequests} from './actions/getrequests';
 
 class App extends Component {
+  componentDidMount(){
+    this.props.getRequests()
+  }
   render() {
     return (
 
@@ -33,5 +39,9 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+function mapDispatchToProps(dispatch){
+  return{
+    getRequests:bindActionCreators(getRequests, dispatch)
+  }
+}
+export default connect(null, mapDispatchToProps)(App);

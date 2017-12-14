@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+import {Provider} from 'react-redux';
+import Store from './store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = Store();
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

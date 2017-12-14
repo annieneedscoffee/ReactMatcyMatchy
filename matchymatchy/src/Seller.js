@@ -8,6 +8,8 @@ import { Button, Form, FormGroup, Label, Input, FormText, Table, Alert } from 'r
 import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 class Seller extends Component {
   render() {
@@ -32,6 +34,7 @@ class Seller extends Component {
         <FormGroup>
           <Label for="exampleSelectMulti">Select All Sizes Available</Label>
           <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
+            <option>one size</option>
             <option>0</option>
             <option>2</option>
             <option>4</option>
