@@ -17,10 +17,12 @@ import EditProduct from './EditProduct';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getRequests} from './actions/getrequests';
+import {getProducts} from './actions/getproducts';
 
 class App extends Component {
   componentDidMount(){
     this.props.getRequests()
+    this.props.getProducts()
   }
   render() {
     return (
@@ -41,7 +43,8 @@ class App extends Component {
 }
 function mapDispatchToProps(dispatch){
   return{
-    getRequests:bindActionCreators(getRequests, dispatch)
+    getRequests:bindActionCreators(getRequests, dispatch),
+      getProducts:bindActionCreators(getProducts, dispatch)
   }
 }
 export default connect(null, mapDispatchToProps)(App);

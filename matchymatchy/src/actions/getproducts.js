@@ -1,6 +1,6 @@
 import axios from 'axios';
-export const GET_PRODUCTS_PENDING = 'GET_LISTITEMS_PENDING';
-export const GET_PRODUCTS_SUCCESS = 'GET_LISTITEMS_SUCCESS';
+export const GET_PRODUCTS_PENDING = 'GET_PRODUCTS_PENDING';
+export const GET_PRODUCTS_SUCCESS = 'GET_PRODUCTS_SUCCESS';
 
 export const getProducts = () =>{
   return async (dispatch) => {

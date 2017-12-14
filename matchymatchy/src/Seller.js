@@ -13,6 +13,20 @@ import {connect} from 'react-redux';
 
 class Seller extends Component {
   render() {
+    let listMyProducts = this.props.products.map(product => {
+      console.log(product)
+      return (
+
+        <tr>
+          <th scope="row">{product.id}</th>
+          <td>{product.name}</td>
+          <td>${product.price}</td>
+            <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
+              <td><Button>Delete</Button></td>
+        </tr>
+
+      )
+    })
     return (
       <div className="App">
         <header className="App-header">
@@ -103,27 +117,7 @@ class Seller extends Component {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Polka Dot Rain Coat</td>
-      <td>$24.99</td>
-      <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
-        <td><Button>Delete</Button></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Fuzzy Alligator Slippers</td>
-      <td>$9.99</td>
-        <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
-          <td><Button>Delete</Button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Striped Tie Design 3</td>
-      <td>$19.99</td>
-        <td><Button tag={Link} to="/editproduct">Click Here</Button></td>
-          <td><Button>Delete</Button></td>
-    </tr>
+{listMyProducts}
   </tbody>
 </Table>
       </div>
@@ -137,4 +131,9 @@ class Seller extends Component {
   }
 }
 
-export default Seller;
+function mapStateToProps(state){
+  return {products: state.products};
+}
+
+
+export default connect(mapStateToProps, null)(Seller);

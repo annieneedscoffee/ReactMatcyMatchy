@@ -22,7 +22,11 @@ class EditProduct extends Component {
       <h1>Edit This Product</h1>
       <Form>
         <FormGroup>
-          <Label for="Product"></Label>
+          <Label for="ID"></Label>
+          <Input type="ID" name="ID" id="ID" placeholder="Enter Product ID number" />
+        </FormGroup>
+        <FormGroup>
+          <Label for="Product">Product Name</Label>
           <Input type="Product" name="Product" id="Product" placeholder="Enter Product Name" />
         </FormGroup>
         <FormGroup>
