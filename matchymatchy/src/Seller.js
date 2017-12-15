@@ -79,25 +79,25 @@ class Seller extends Component {
         <FormGroup check>
           <Label check>
             <Input type="checkbox" />{' '}
-            On Sale
+            On Sale <i class="material-icons">monetization_on</i>
           </Label>
         </FormGroup>
         <FormGroup check>
           <Label check>
             <Input type="checkbox" />{' '}
-            Limited Time Only
+            Limited Time Only <i class="material-icons">schedule</i>
           </Label>
         </FormGroup>
         <FormGroup check>
           <Label check>
             <Input type="checkbox" />{' '}
-            Hand Made
+            Hand Made <i class="material-icons">color_lens</i>
           </Label>
         </FormGroup>
         <FormGroup check>
           <Label check>
             <Input type="checkbox" />{' '}
-            Ethically Sourced
+            Ethically Sourced <i class="material-icons">favorite</i>
           </Label>
         </FormGroup>
         <Button>Submit</Button>

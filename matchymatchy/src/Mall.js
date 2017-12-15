@@ -29,6 +29,7 @@ class Mall extends Component {
                <CardSubtitle>Commission: ${product.commission}</CardSubtitle>
                <br/>
             <CardText>{product.description}</CardText>
+            <CardText>{product.ethical===true && <i class="material-icons">favorite</i>}{product.on_sale===true && <i class="material-icons">monetization_on</i>}{product.limited_time===true && <i class="material-icons">schedule</i>}{product.handmade===true && <i class="material-icons">color_lens</i>}</CardText>
             <Button>Suggest!</Button>
           </CardBody>
         </Card>

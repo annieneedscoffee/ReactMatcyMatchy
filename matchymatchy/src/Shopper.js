@@ -65,7 +65,7 @@ import {connect} from 'react-redux';
       <CardSubtitle>Match For:</CardSubtitle>
       <CardTitle>Black Dress</CardTitle>
       <CardText>This is shawl from Banana Republic. It would add a nice splash of color.</CardText>
-      <Button>Add to Cart</Button>
+      <Button>Add to Cart</Button> <Button>Product Details</Button>
     </CardBody>
   </Card>
   <Card>
@@ -74,7 +74,7 @@ import {connect} from 'react-redux';
       <CardSubtitle>Match For:</CardSubtitle>
       <CardTitle>Winter Coat</CardTitle>
       <CardText>Cute hat and glove set from Patagonia.</CardText>
-      <Button>Add to Cart</Button>
+      <Button>Add to Cart</Button> <Button>Product Details</Button>
     </CardBody>
   </Card>
   <Card>
@@ -83,7 +83,7 @@ import {connect} from 'react-redux';
       <CardSubtitle>Match For:</CardSubtitle>
       <CardTitle>Striped Suit</CardTitle>
       <CardText>These shoes would go well with the suit you posted.</CardText>
-      <Button>Add to Cart</Button>
+      <Button>Add to Cart</Button> <Button>Product Details</Button>
     </CardBody>
   </Card>
   <Card>
@@ -92,7 +92,7 @@ import {connect} from 'react-redux';
       <CardSubtitle>Match For:</CardSubtitle>
       <CardTitle>Navy Shoes</CardTitle>
       <CardText>This is purse comes in lots of colors, including navy.</CardText>
-      <Button>Add to Cart</Button>
+      <Button>Add to Cart</Button> <Button>Product Details</Button>
     </CardBody>
   </Card>
   <Card>
@@ -101,7 +101,7 @@ import {connect} from 'react-redux';
       <CardSubtitle>Match For:</CardSubtitle>
       <CardTitle>Pink Blouse</CardTitle>
       <CardText>This is a skirt from J. Crew and it's on sale!</CardText>
-      <Button>Add to Cart</Button>
+      <Button>Add to Cart</Button> <Button>Product Details</Button>
     </CardBody>
   </Card>
 </CardColumns>

@@ -63,10 +63,10 @@ import {connect} from 'react-redux';
              <Card body>
                <CardTitle>MatchMaker Stats</CardTitle>
                <br/>
-               <CardText>Sales Made: </CardText>
-               <CardText>Sales Total: </CardText>
-                <CardText>Commission Total: </CardText>
-                <CardText>Unredeemed Commission: </CardText>
+               <CardText>Sales Made: 27</CardText>
+               <CardText>Sales Total: $643.14</CardText>
+                <CardText>Commission Total: $79.28</CardText>
+                <CardText>Unredeemed Commission: $29.28</CardText>
                 <br/>
                 <br/>
                 <br/>
