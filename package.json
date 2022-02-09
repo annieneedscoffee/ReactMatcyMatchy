@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/annieneedscoffee/ReactMatcyMatchy#readme",
   "dependencies": {
-    "yarn": "^1.6.0"
+    "yarn": "^1.22.0"
   }
 }
